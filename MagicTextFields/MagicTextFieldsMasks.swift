@@ -12,7 +12,7 @@ import UIKit
 public extension MagicTextfields {
     
     // MARK: - ☎️ Phone
-    class func maskForPhone(_ textField: UITextField, range: NSRange) -> Bool {
+    public class func maskForPhone(_ textField: UITextField, range: NSRange) -> Bool {
         var fieldText = textField.text!
         let length = MagicTextfields.realLengthOf(fieldText as NSString)
         let total = 11
@@ -53,7 +53,7 @@ public extension MagicTextfields {
     }
     
     // MARK: - 📆 Date
-    class func maskForDate(_ textField: UITextField, range: NSRange) -> Bool {
+    public class func maskForDate(_ textField: UITextField, range: NSRange) -> Bool {
         var fieldText = textField.text!
         let length = MagicTextfields.realLengthOf(fieldText as NSString)
         let total = 8
