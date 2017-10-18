@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4AB90A861F97B9BD0096EE76 /* MagicTextFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB90A841F97B9BD0096EE76 /* MagicTextFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AB90A8D1F97BBAE0096EE76 /* MagicTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90A8C1F97BBAE0096EE76 /* MagicTextFields.swift */; };
+		4AB90A8F1F97BC1B0096EE76 /* MagicTextFieldsMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB90A8E1F97BC1B0096EE76 /* MagicTextFieldsMasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AB90A811F97B9BD0096EE76 /* MagicTextFields.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MagicTextFields.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB90A841F97B9BD0096EE76 /* MagicTextFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicTextFields.h; sourceTree = "<group>"; };
 		4AB90A851F97B9BD0096EE76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB90A8C1F97BBAE0096EE76 /* MagicTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTextFields.swift; sourceTree = "<group>"; };
+		4AB90A8E1F97BC1B0096EE76 /* MagicTextFieldsMasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTextFieldsMasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				4AB90A841F97B9BD0096EE76 /* MagicTextFields.h */,
 				4AB90A851F97B9BD0096EE76 /* Info.plist */,
+				4AB90A8C1F97BBAE0096EE76 /* MagicTextFields.swift */,
+				4AB90A8E1F97BC1B0096EE76 /* MagicTextFieldsMasks.swift */,
 			);
 			path = MagicTextFields;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					4AB90A801F97B9BD0096EE76 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB90A8D1F97BBAE0096EE76 /* MagicTextFields.swift in Sources */,
+				4AB90A8F1F97BC1B0096EE76 /* MagicTextFieldsMasks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		4AB90A8A1F97B9BD0096EE76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.ricieri.framework.MagicTextFields;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +284,7 @@
 		4AB90A8B1F97B9BD0096EE76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
